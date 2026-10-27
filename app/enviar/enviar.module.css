@@ -1,0 +1,44 @@
+/* Otto Martins Mota - RA 10418170 | Renan Garrido - RA 10417093 | Yuri Milliet da Silva - RA 10417884 */
+
+.enviar { max-width: 680px; padding: 3rem 0 1rem; }
+.cabecalho h2 { font-size: 1.8rem; }
+.cabecalho p { color: var(--pedra); margin: .5rem 0 2rem; max-width: 58ch; }
+
+.formulario fieldset { border: none; padding-bottom: 1.5rem; }
+.formulario legend { font-size: .8rem; font-weight: 600; color: var(--pedra); margin-bottom: .8rem; }
+.formulario p { margin-bottom: 1rem; }
+.formulario label { display: block; font-size: .88rem; font-weight: 600; margin-bottom: .35rem; }
+
+.formulario input[type="text"], .formulario input[type="email"],
+.formulario select, .formulario textarea {
+  width: 100%; font-family: inherit; font-size: .95rem; padding: .6rem .75rem;
+  border: 1px solid var(--linha); border-radius: var(--raio);
+  background-color: var(--branco); color: var(--tinta);
+}
+
+.formulario textarea { resize: vertical; }
+
+.duasColunas { display: grid; grid-template-columns: 1fr 1fr; gap: 0 1.2rem; }
+.duasColunas legend, .larguraTotal { grid-column: 1/-1; }
+
+.rodapeFormulario {
+  display: flex; align-items: center; justify-content: space-between; gap: 1.5rem;
+  padding-top: 1.2rem; border-top: 1px solid var(--linha);
+}
+
+.rodapeFormulario p { display: flex; align-items: center; gap: .5rem; margin: 0; font-size: .88rem; }
+.rodapeFormulario label { font-weight: 400; margin: 0; }
+.rodapeFormulario input { accent-color: var(--verde); width: 16px; height: 16px; }
+
+.rodapeFormulario button {
+  font-family: inherit; font-size: .95rem; font-weight: 600;
+  padding: .65rem 1.6rem; border: none; border-radius: var(--raio);
+  background-color: var(--verde); color: var(--branco); cursor: pointer;
+}
+
+.rodapeFormulario button:hover { background-color: var(--tinta); }
+
+@media (max-width: 900px) {
+  .duasColunas { grid-template-columns: 1fr; }
+  .rodapeFormulario { flex-direction: column; align-items: flex-start; }
+}

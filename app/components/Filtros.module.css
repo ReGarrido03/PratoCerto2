@@ -1,0 +1,41 @@
+/* Otto Martins Mota - RA 10418170 | Renan Garrido - RA 10417093 | Yuri Milliet da Silva - RA 10417884 */
+
+.filtros h2 { font-size: 1.05rem; padding-bottom: .7rem; border-bottom: 2px solid var(--tinta); }
+
+.filtros fieldset { border: none; padding: 1.4rem 0; border-bottom: 1px solid var(--linha); }
+
+.filtros legend { font-size: .8rem; font-weight: 600; color: var(--pedra); margin-bottom: .8rem; }
+
+.grupoIngredientes { display: flex; flex-wrap: wrap; gap: .45rem; }
+.grupoIngredientes legend { margin-bottom: 0; }
+.grupoIngredientes p { margin: 0; }
+.grupoIngredientes input { position: absolute; opacity: 0; pointer-events: none; }
+
+.grupoIngredientes label {
+  display: inline-block; font-size: .85rem; padding: .35rem .85rem;
+  border: 1px solid var(--linha); border-radius: 999px;
+  background-color: var(--branco); cursor: pointer;
+}
+
+.grupoIngredientes label:hover { border-color: var(--verde); }
+
+.grupoIngredientes input:checked + label {
+  background-color: var(--verde); border-color: var(--verde); color: var(--branco);
+}
+
+.grupoIngredientes input:focus-visible + label { outline: 3px solid var(--milho); outline-offset: 2px; }
+
+.grupoCusto label { display: block; font-size: .9rem; font-weight: 600; margin-bottom: .6rem; }
+.grupoCusto input { width: 100%; accent-color: var(--verde); }
+
+.grupoCaixas p { display: flex; align-items: center; gap: .55rem; font-size: .9rem; padding: .2rem 0; }
+.grupoCaixas input { accent-color: var(--verde); width: 15px; height: 15px; }
+
+.limpar {
+  width: 100%; font-family: inherit; font-size: .9rem;
+  margin-top: 1.2rem; padding: .6rem;
+  border: 1px solid var(--linha); border-radius: var(--raio);
+  background-color: transparent; color: var(--pedra); cursor: pointer;
+}
+
+.limpar:hover { border-color: var(--tinta); color: var(--tinta); }

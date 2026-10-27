@@ -1,0 +1,81 @@
+/* Otto Martins Mota - RA 10418170 | Renan Garrido - RA 10417093 | Yuri Milliet da Silva - RA 10417884 */
+
+.painel {
+  display: grid; grid-template-columns: 1fr 260px;
+  gap: 1.8rem; margin-top: 2.5rem;
+  padding: 1.6rem 1.8rem 2rem;
+  border: 1px solid var(--linha); border-radius: 6px;
+  background-color: var(--branco);
+}
+
+.cabecalho {
+  grid-column: 1/-1; display: flex; align-items: center;
+  justify-content: space-between; gap: 1rem;
+  padding-bottom: .9rem; border-bottom: 2px solid var(--tinta);
+}
+
+.cabecalho h2 { font-size: 1.5rem; }
+
+.voltar { font-size: .88rem; text-decoration: none; color: var(--pedra); }
+.voltar:hover { color: var(--verde); }
+
+.preparo figure { margin-bottom: 1.2rem; }
+
+.preparo figure img {
+  width: 100%; aspect-ratio: 16/9; object-fit: cover;
+  border-radius: var(--raio); background-color: var(--verde-claro);
+}
+
+.preparo figcaption { font-size: .8rem; color: var(--pedra); margin-top: .4rem; }
+
+.preparo h3, .lateral h3 { font-size: .95rem; margin-bottom: .6rem; }
+.preparo ol { padding-left: 1.1rem; }
+
+.preparo li, .listaIngredientes li {
+  font-size: .92rem; padding: .4rem 0; border-bottom: 1px solid var(--linha);
+}
+
+.calculadora { padding: 1.1rem; border-radius: var(--raio); background-color: var(--verde-claro); }
+
+.contador { display: flex; align-items: center; gap: .8rem; margin-bottom: 1rem; }
+
+.contador button {
+  font-size: 1.1rem; line-height: 1; width: 32px; height: 32px;
+  border: 1px solid var(--verde); border-radius: var(--raio);
+  background-color: var(--branco); color: var(--verde); cursor: pointer;
+}
+
+.contador button:hover { background-color: var(--verde); color: var(--branco); }
+
+.porcoes {
+  font-family: var(--titulo); font-size: 1.4rem; font-weight: 600;
+  font-variant-numeric: tabular-nums; min-width: 2ch; text-align: center;
+}
+
+.custos {
+  display: grid; grid-template-columns: 1fr auto; gap: .35rem 1rem;
+  font-size: .9rem; padding-top: .8rem; border-top: 1px solid var(--linha);
+}
+
+.custos dt { color: var(--pedra); }
+.custos dd { font-weight: 600; font-variant-numeric: tabular-nums; text-align: right; }
+
+.ingredientes { margin-top: 1.4rem; }
+.listaIngredientes { list-style: none; }
+.listaIngredientes li { display: flex; justify-content: space-between; gap: 1rem; }
+.listaIngredientes li span + span { font-variant-numeric: tabular-nums; color: var(--pedra); }
+
+.adicionarCompras {
+  font-family: inherit; font-size: .88rem; font-weight: 600;
+  width: 100%; margin-top: 1rem; padding: .5rem .8rem;
+  border: 1px solid var(--verde); border-radius: var(--raio);
+  background-color: transparent; color: var(--verde); cursor: pointer;
+}
+
+.adicionarCompras:hover { background-color: var(--verde); color: var(--branco); }
+
+@media (max-width: 900px) {
+  .painel { grid-template-columns: 1fr; gap: 1.8rem; padding: 1.2rem; }
+}
+
+.aviso { margin-top: 3rem; font-size: 1.1rem; color: var(--pedra); }

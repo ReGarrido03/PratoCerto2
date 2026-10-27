@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 848" width="1200" height="848" font-family="'Segoe UI', 'DejaVu Sans', Arial, sans-serif">
+<rect width="1200" height="848" fill="#F1F3EC"/>
+<text x="40" y="46" font-size="24" font-weight="700" fill="#1B2318">Prato Certo — árvore de componentes</text>
+<text x="40" y="72" font-size="14" fill="#6E766A">Quem renderiza quem no Next.js. A linha liga o arquivo que importa ao componente que ele renderiza.</text>
+<rect x="450" y="100" width="300" height="60" rx="6" fill="#2F5D3A" stroke="#2F5D3A" stroke-width="1.5"/>
+<text x="600.0" y="125.0" text-anchor="middle" font-family="'DejaVu Sans Mono', 'Courier New', monospace" font-size="14.5" font-weight="600" fill="#FFFFFF">app/layout.js</text>
+<text x="600.0" y="144.0" text-anchor="middle" font-family="'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="12.5" fill="#CBD9C6">envolve todas as páginas</text>
+<polyline points="600,160 600,186" fill="none" stroke="#6E766A" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="185.0,186 1015.0,186" fill="none" stroke="#6E766A" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="185.0,186 185.0,206" fill="none" stroke="#6E766A" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="1015.0,186 1015.0,206" fill="none" stroke="#6E766A" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="600,186 600,306" fill="none" stroke="#6E766A" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="70" y="206" width="230" height="64" rx="6" fill="#FFFFFF" stroke="#D3D8CC" stroke-width="1.5"/>
+<text x="185.0" y="233.0" text-anchor="middle" font-family="'DejaVu Sans Mono', 'Courier New', monospace" font-size="14.5" font-weight="600" fill="#1B2318">Cabecalho.jsx</text>
+<text x="185.0" y="252.0" text-anchor="middle" font-family="'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="12.5" fill="#6E766A">logo, busca e menu</text>
+<rect x="900" y="206" width="230" height="64" rx="6" fill="#FFFFFF" stroke="#D3D8CC" stroke-width="1.5"/>
+<text x="1015.0" y="233.0" text-anchor="middle" font-family="'DejaVu Sans Mono', 'Courier New', monospace" font-size="14.5" font-weight="600" fill="#1B2318">Rodape.jsx</text>
+<text x="1015.0" y="252.0" text-anchor="middle" font-family="'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="12.5" fill="#6E766A">créditos do projeto</text>
+<rect x="40" y="306" width="1120" height="430" rx="10" fill="#FFFFFF" fill-opacity=".45" stroke="#6E766A" stroke-width="1.5" stroke-dasharray="7 6"/>
+<text x="58" y="332" font-family="'DejaVu Sans Mono', 'Courier New', monospace" font-size="14" font-weight="700" fill="#6E766A">{children}</text>
+<text x="158" y="332" font-size="13" fill="#6E766A">uma destas quatro páginas, conforme a rota aberta</text>
+<polyline points="188.0,336 1019.0,336" fill="none" stroke="#6E766A" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="188.0,336 188.0,352" fill="none" stroke="#6E766A" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="465.0,336 465.0,352" fill="none" stroke="#6E766A" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="742.0,336 742.0,352" fill="none" stroke="#6E766A" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="1019.0,336 1019.0,352" fill="none" stroke="#6E766A" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="62" y="352" width="252" height="66" rx="6" fill="#E3EDDF" stroke="#2F5D3A" stroke-width="1.5"/>
+<text x="188.0" y="380.0" text-anchor="middle" font-family="'DejaVu Sans Mono', 'Courier New', monospace" font-size="14.5" font-weight="600" fill="#1B2318">app/page.js</text>
+<text x="188.0" y="399.0" text-anchor="middle" font-family="'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="12.5" fill="#2F5D3A">rota /</text>
+<rect x="339" y="352" width="252" height="66" rx="6" fill="#E3EDDF" stroke="#2F5D3A" stroke-width="1.5"/>
+<text x="465.0" y="380.0" text-anchor="middle" font-family="'DejaVu Sans Mono', 'Courier New', monospace" font-size="14.5" font-weight="600" fill="#1B2318">app/sobre/page.js</text>
+<text x="465.0" y="399.0" text-anchor="middle" font-family="'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="12.5" fill="#2F5D3A">rota /sobre</text>
+<rect x="616" y="352" width="252" height="66" rx="6" fill="#E3EDDF" stroke="#2F5D3A" stroke-width="1.5"/>
+<text x="742.0" y="380.0" text-anchor="middle" font-family="'DejaVu Sans Mono', 'Courier New', monospace" font-size="14.5" font-weight="600" fill="#1B2318">app/enviar/page.js</text>
+<text x="742.0" y="399.0" text-anchor="middle" font-family="'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="12.5" fill="#2F5D3A">rota /enviar</text>
+<rect x="893" y="352" width="252" height="66" rx="6" fill="#E3EDDF" stroke="#2F5D3A" stroke-width="1.5"/>
+<text x="1019.0" y="380.0" text-anchor="middle" font-family="'DejaVu Sans Mono', 'Courier New', monospace" font-size="14.5" font-weight="600" fill="#1B2318">app/receitas/[id]/page.js</text>
+<text x="1019.0" y="399.0" text-anchor="middle" font-family="'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="12.5" fill="#2F5D3A">rota /receitas/4</text>
+<polyline points="73,418 73,605.0" fill="none" stroke="#6E766A" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="73,477.0 84,477.0" fill="none" stroke="#6E766A" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="84" y="452" width="230" height="50" rx="6" fill="#FFFFFF" stroke="#D3D8CC" stroke-width="1.5"/>
+<text x="199.0" y="482.0" text-anchor="middle" font-family="'DejaVu Sans Mono', 'Courier New', monospace" font-size="14.5" font-weight="600" fill="#1B2318">Apresentacao.jsx</text>
+<polyline points="73,541.0 84,541.0" fill="none" stroke="#6E766A" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="84" y="516" width="230" height="50" rx="6" fill="#FFFFFF" stroke="#D3D8CC" stroke-width="1.5"/>
+<text x="199.0" y="546.0" text-anchor="middle" font-family="'DejaVu Sans Mono', 'Courier New', monospace" font-size="14.5" font-weight="600" fill="#1B2318">Filtros.jsx</text>
+<polyline points="73,605.0 84,605.0" fill="none" stroke="#6E766A" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="84" y="580" width="230" height="50" rx="6" fill="#FFFFFF" stroke="#D3D8CC" stroke-width="1.5"/>
+<text x="199.0" y="610.0" text-anchor="middle" font-family="'DejaVu Sans Mono', 'Courier New', monospace" font-size="14.5" font-weight="600" fill="#1B2318">Resultados.jsx</text>
+<polyline points="95,630 95,677.0" fill="none" stroke="#6E766A" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="95,677.0 106,677.0" fill="none" stroke="#6E766A" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="106" y="652" width="208" height="50" rx="6" fill="#FFFFFF" stroke="#D3D8CC" stroke-width="1.5"/>
+<text x="210.0" y="682.0" text-anchor="middle" font-family="'DejaVu Sans Mono', 'Courier New', monospace" font-size="14.5" font-weight="600" fill="#1B2318">ReceitaCard.jsx</text>
+<text x="210.0" y="719" text-anchor="middle" font-size="12" fill="#6E766A">repetido uma vez por receita</text>
+<rect x="361" y="452" width="230" height="50" rx="6" fill="none" stroke="#D3D8CC" stroke-width="1.5" stroke-dasharray="6 5"/>
+<text x="476.0" y="482.0" text-anchor="middle" font-family="'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="14.5" font-weight="600" fill="#6E766A">sem componente próprio</text>
+<text x="476.0" y="519" text-anchor="middle" font-size="12" fill="#6E766A">a própria página monta o conteúdo</text>
+<rect x="638" y="452" width="230" height="50" rx="6" fill="none" stroke="#D3D8CC" stroke-width="1.5" stroke-dasharray="6 5"/>
+<text x="753.0" y="482.0" text-anchor="middle" font-family="'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="14.5" font-weight="600" fill="#6E766A">sem componente próprio</text>
+<text x="753.0" y="519" text-anchor="middle" font-size="12" fill="#6E766A">a própria página monta o conteúdo</text>
+<rect x="915" y="452" width="230" height="50" rx="6" fill="none" stroke="#D3D8CC" stroke-width="1.5" stroke-dasharray="6 5"/>
+<text x="1030.0" y="482.0" text-anchor="middle" font-family="'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="14.5" font-weight="600" fill="#6E766A">sem componente próprio</text>
+<text x="1030.0" y="519" text-anchor="middle" font-size="12" fill="#6E766A">a própria página monta o conteúdo</text>
+<rect x="40" y="756" width="1120" height="60" rx="8" fill="#FFFFFF" stroke="#D3D8CC" stroke-width="1.5"/>
+<text x="62" y="782" font-size="13.5" font-weight="700" fill="#1B2318">Imports de apoio</text>
+<text x="62" y="804" font-family="'DejaVu Sans Mono', 'Courier New', monospace" font-size="12.5" fill="#2F5D3A">app/dados/receitas.json</text>
+<text x="300" y="804" font-size="12.5" fill="#6E766A">lido por app/page.js e por app/receitas/[id]/page.js</text>
+<text x="800" y="782" font-size="12.5" fill="#6E766A">Cada arquivo .jsx importa também o seu próprio .module.css</text>
+</svg>

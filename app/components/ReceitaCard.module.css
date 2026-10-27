@@ -1,0 +1,66 @@
+/* Otto Martins Mota - RA 10418170 | Renan Garrido - RA 10417093 | Yuri Milliet da Silva - RA 10417884 */
+
+.receita {
+  display: grid; grid-template-columns: 130px 1fr 150px;
+  gap: 1.3rem; align-items: center; padding: 1rem;
+  border: 1px solid var(--linha); border-radius: var(--raio);
+  background-color: var(--branco);
+}
+
+.receita figure {
+  aspect-ratio: 4/3; overflow: hidden;
+  border-radius: var(--raio); background-color: var(--verde-claro);
+}
+
+.receita figure img { width: 100%; height: 100%; object-fit: cover; }
+
+.descricao h3 { font-size: 1.15rem; margin-bottom: .3rem; }
+.descricao > p { font-size: .92rem; color: var(--pedra); max-width: 60ch; }
+
+.selos { display: flex; flex-wrap: wrap; gap: .4rem; margin-top: .7rem; list-style: none; }
+
+.selos li {
+  font-size: .75rem; padding: .2rem .6rem; border-radius: var(--raio);
+  background-color: var(--verde-claro); color: var(--verde);
+}
+
+.valor { text-align: right; }
+.valor p { line-height: 1.1; margin-bottom: .7rem; }
+
+.valor strong {
+  display: block; font-family: var(--titulo); font-size: 1.7rem; font-weight: 800;
+  font-variant-numeric: tabular-nums; color: var(--verde);
+}
+
+.valor small { font-size: .75rem; color: var(--pedra); }
+
+.abrirReceita {
+  display: block; font-family: inherit; font-size: .88rem; font-weight: 600;
+  text-align: center; text-decoration: none; padding: .5rem .8rem;
+  border: 1px solid var(--verde); border-radius: var(--raio); color: var(--verde);
+}
+
+.abrirReceita:hover { background-color: var(--verde); color: var(--branco); }
+
+@media (max-width: 900px) {
+  .receita { grid-template-columns: 100px 1fr; }
+  .valor {
+    grid-column: 1/-1; display: flex; align-items: center;
+    justify-content: space-between; text-align: left;
+  }
+  .valor strong { font-size: 1.4rem; }
+}
+
+@media (max-width: 600px) {
+  .receita { grid-template-columns: 1fr; gap: .9rem; text-align: center; padding: 1rem; }
+  .receita figure { aspect-ratio: 3/2; }
+  .descricao h3 { font-size: 1.25rem; }
+  .descricao > p { max-width: none; font-size: .95rem; }
+  .selos { justify-content: center; }
+  .valor {
+    flex-direction: column; gap: .8rem; text-align: center;
+    margin-top: .2rem; padding-top: .9rem; border-top: 1px solid var(--linha);
+  }
+  .valor p { margin: 0; }
+  .valor strong { font-size: 1.6rem; }
+}

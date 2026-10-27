@@ -1,0 +1,9 @@
+/* Otto Martins Mota - RA 10418170 | Renan Garrido - RA 10417093 | Yuri Milliet da Silva - RA 10417884 */
+
+.rodape {
+  display: flex; align-items: center; justify-content: space-between; gap: 1.5rem;
+  max-width: var(--largura); margin: 0 auto; padding: 1.5rem;
+  border-top: 1px solid var(--linha); font-size: .85rem; color: var(--pedra);
+}
+
+@media (max-width: 900px) { .rodape { flex-direction: column; align-items: flex-start; } }

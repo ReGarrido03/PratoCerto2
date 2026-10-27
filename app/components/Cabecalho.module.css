@@ -1,0 +1,44 @@
+/* Otto Martins Mota - RA 10418170 | Renan Garrido - RA 10417093 | Yuri Milliet da Silva - RA 10417884 */
+
+.topo {
+  display: flex; align-items: center; gap: 1.5rem;
+  max-width: var(--largura); margin: 0 auto; padding: 1rem 1.5rem;
+}
+
+.marca {
+  display: flex; align-items: center; gap: .7rem;
+  text-decoration: none; color: var(--tinta);
+}
+
+.marca img { width: 34px; height: 34px; }
+.marca h1 { font-size: 1.35rem; font-weight: 800; }
+
+.busca { display: flex; flex: 1; max-width: 420px; }
+
+.busca input {
+  flex: 1; font-family: inherit; font-size: .9rem; padding: .55rem .8rem;
+  border: 1px solid var(--linha); border-right: none;
+  border-radius: var(--raio) 0 0 var(--raio); background-color: var(--branco);
+}
+
+.busca button {
+  font-family: inherit; font-size: .9rem; padding: 0 1rem;
+  border: 1px solid var(--linha); border-radius: 0 var(--raio) var(--raio) 0;
+  background-color: var(--verde-claro); color: var(--verde); cursor: pointer;
+}
+
+.menu ul { display: flex; gap: 1.4rem; list-style: none; }
+
+.menu a { font-size: .92rem; text-decoration: none; color: var(--pedra); padding-bottom: 3px; }
+.menu a:hover { color: var(--verde); }
+.menu a[aria-current="page"] { color: var(--tinta); border-bottom: 2px solid var(--milho); }
+
+@media (max-width: 900px) {
+  .topo { flex-wrap: wrap; }
+  .busca { order: 3; max-width: none; width: 100%; }
+}
+
+@media (max-width: 600px) {
+  .topo { justify-content: center; text-align: center; }
+  .menu ul { flex-wrap: wrap; justify-content: center; gap: 1rem; }
+}

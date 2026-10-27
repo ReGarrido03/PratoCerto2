@@ -52,6 +52,19 @@ O Projeto 1 foi construído em HTML, CSS e JavaScript puro, com o acervo de vint
 
 Nesta segunda etapa, a mesma aplicação é reconstruída com React e Next.js. A interface deixa de ser montada por concatenação de strings e passa a ser dividida em componentes reutilizáveis, o estado da tela passa a ser controlado por `useState` e `useEffect`, e o acervo deixa de ser lido como arquivo para ser servido por uma rota de API criada dentro do próprio projeto.
 
+## Componentização em React
+
+A interface foi dividida em seis componentes reutilizáveis. O diagrama abaixo mostra
+quem renderiza quem a partir do `layout.js`, que envolve todas as páginas.
+
+![Árvore de componentes do projeto](docs/componentes.png)
+
+O critério foi componentizar o que se repete ou é compartilhado. O `Cabecalho` e o
+`Rodape` ficam no `layout.js` e por isso aparecem nas quatro páginas sem serem
+reescritos em nenhuma delas, e o `ReceitaCard` é instanciado uma vez para cada receita,
+recebendo os dados por props. As páginas `/sobre` e `/enviar` montam o próprio conteúdo,
+porque são usadas uma vez só.
+
 ## Como rodar o projeto
 
 O projeto usa Node.js. Com o repositório clonado, instale as dependências e suba o servidor de desenvolvimento:

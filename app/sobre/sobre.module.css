@@ -1,0 +1,42 @@
+/* Otto Martins Mota - RA 10418170 | Renan Garrido - RA 10417093 | Yuri Milliet da Silva - RA 10417884 */
+
+.comoFunciona { padding: 3rem 0 2.5rem; }
+.comoFunciona h2 { font-size: 1.8rem; margin-bottom: 1.5rem; }
+
+.comoFunciona ol { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; list-style: none; }
+.comoFunciona article { padding-top: 1rem; border-top: 2px solid var(--tinta); }
+.comoFunciona h3 { font-size: 1.05rem; margin-bottom: .4rem; }
+
+.numero {
+  font-family: var(--titulo); font-size: 1.6rem; font-weight: 600;
+  color: var(--milho); margin-bottom: .4rem; line-height: 1.15;
+}
+
+.descricao { font-size: .92rem; color: var(--pedra); }
+
+.projeto {
+  display: grid; grid-template-columns: 1fr 340px; gap: 3rem; align-items: start;
+  padding: 2.5rem 0 1rem; border-top: 1px solid var(--linha);
+}
+
+.textoProjeto h2 { font-size: 1.8rem; margin-bottom: 1.5rem; }
+.textoProjeto p { max-width: 62ch; margin-bottom: 1rem; }
+.textoProjeto :global(.botao) { margin-top: .6rem; }
+
+.ods h3 {
+  font-size: .95rem; padding-bottom: .6rem; margin-bottom: 1rem;
+  border-bottom: 2px solid var(--tinta);
+}
+
+.ods dt { font-family: var(--titulo); font-size: .95rem; font-weight: 600; color: var(--verde); }
+
+.ods dd {
+  font-size: .9rem; color: var(--pedra);
+  padding-bottom: .9rem; margin-bottom: .9rem; border-bottom: 1px solid var(--linha);
+}
+
+.ods div:last-child dd { border-bottom: none; }
+
+@media (max-width: 900px) {
+  .comoFunciona ol, .projeto { grid-template-columns: 1fr; gap: 1.8rem; }
+}
