@@ -56,7 +56,7 @@ Nesta segunda etapa, a mesma aplicação é reconstruída com React e Next.js. A
 
 A interface foi dividida em seis componentes reutilizáveis. O diagrama abaixo mostra quem renderiza quem a partir do `layout.js`, que envolve todas as páginas, e como os dados chegam até a tela.
 
-![Árvore de componentes do projeto](docs/componentes.png)
+![Árvore de componentes do projeto](docs/componentes.svg)
 
 O critério foi componentizar o que se repete ou é compartilhado. O `Cabecalho` e o `Rodape` ficam no `layout.js` e por isso aparecem nas quatro páginas sem serem reescritos em nenhuma delas, e o `ReceitaCard` é instanciado uma vez para cada receita, recebendo os dados por props. As páginas `/sobre` e `/enviar` montam o próprio conteúdo, porque são usadas uma vez só.
 
