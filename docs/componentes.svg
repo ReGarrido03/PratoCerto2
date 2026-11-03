@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 848" width="1200" height="848" font-family="'Segoe UI', 'DejaVu Sans', Arial, sans-serif">
-<rect width="1200" height="848" fill="#F1F3EC"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 906" width="1200" height="906" font-family="'Segoe UI', 'DejaVu Sans', Arial, sans-serif">
+<rect width="1200" height="906" fill="#F1F3EC"/>
 <text x="40" y="46" font-size="24" font-weight="700" fill="#1B2318">Prato Certo — árvore de componentes</text>
 <text x="40" y="72" font-size="14" fill="#6E766A">Quem renderiza quem no Next.js. A linha liga o arquivo que importa ao componente que ele renderiza.</text>
 <rect x="450" y="100" width="300" height="60" rx="6" fill="#2F5D3A" stroke="#2F5D3A" stroke-width="1.5"/>
@@ -36,6 +36,10 @@
 <rect x="893" y="352" width="252" height="66" rx="6" fill="#E3EDDF" stroke="#2F5D3A" stroke-width="1.5"/>
 <text x="1019.0" y="380.0" text-anchor="middle" font-family="'DejaVu Sans Mono', 'Courier New', monospace" font-size="14.5" font-weight="600" fill="#1B2318">app/receitas/[id]/page.js</text>
 <text x="1019.0" y="399.0" text-anchor="middle" font-family="'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="12.5" fill="#2F5D3A">rota /receitas/4</text>
+<rect x="72" y="339" width="88" height="21" rx="10" fill="#E3A81F"/>
+<text x="116.0" y="354" text-anchor="middle" font-family="'DejaVu Sans Mono', 'Courier New', monospace" font-size="11.5" font-weight="700" fill="#1B2318">use client</text>
+<rect x="903" y="339" width="88" height="21" rx="10" fill="#E3A81F"/>
+<text x="947.0" y="354" text-anchor="middle" font-family="'DejaVu Sans Mono', 'Courier New', monospace" font-size="11.5" font-weight="700" fill="#1B2318">use client</text>
 <polyline points="73,418 73,605.0" fill="none" stroke="#6E766A" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
 <polyline points="73,477.0 84,477.0" fill="none" stroke="#6E766A" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
 <rect x="84" y="452" width="230" height="50" rx="6" fill="#FFFFFF" stroke="#D3D8CC" stroke-width="1.5"/>
@@ -60,9 +64,21 @@
 <rect x="915" y="452" width="230" height="50" rx="6" fill="none" stroke="#D3D8CC" stroke-width="1.5" stroke-dasharray="6 5"/>
 <text x="1030.0" y="482.0" text-anchor="middle" font-family="'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="14.5" font-weight="600" fill="#6E766A">sem componente próprio</text>
 <text x="1030.0" y="519" text-anchor="middle" font-size="12" fill="#6E766A">a própria página monta o conteúdo</text>
-<rect x="40" y="756" width="1120" height="60" rx="8" fill="#FFFFFF" stroke="#D3D8CC" stroke-width="1.5"/>
-<text x="62" y="782" font-size="13.5" font-weight="700" fill="#1B2318">Imports de apoio</text>
-<text x="62" y="804" font-family="'DejaVu Sans Mono', 'Courier New', monospace" font-size="12.5" fill="#2F5D3A">app/dados/receitas.json</text>
-<text x="300" y="804" font-size="12.5" fill="#6E766A">lido por app/page.js e por app/receitas/[id]/page.js</text>
-<text x="800" y="782" font-size="12.5" fill="#6E766A">Cada arquivo .jsx importa também o seu próprio .module.css</text>
+<rect x="40" y="752" width="1120" height="118" rx="8" fill="#FFFFFF" stroke="#D3D8CC" stroke-width="1.5"/>
+<text x="62" y="780" font-size="13.5" font-weight="700" fill="#1B2318">Como os dados chegam à tela</text>
+<rect x="100" y="796" width="270" height="56" rx="6" fill="#FFFFFF" stroke="#D3D8CC" stroke-width="1.5"/>
+<text x="235.0" y="819.0" text-anchor="middle" font-family="'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="14.5" font-weight="600" fill="#1B2318">páginas de receita</text>
+<text x="235.0" y="838.0" text-anchor="middle" font-family="'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="12.5" fill="#6E766A">app/page.js e receitas/[id]</text>
+<rect x="470" y="796" width="270" height="56" rx="6" fill="#E3EDDF" stroke="#2F5D3A" stroke-width="1.5"/>
+<text x="605.0" y="819.0" text-anchor="middle" font-family="'DejaVu Sans Mono', 'Courier New', monospace" font-size="14.5" font-weight="600" fill="#1B2318">app/api/receitas</text>
+<text x="605.0" y="838.0" text-anchor="middle" font-family="'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="12.5" fill="#2F5D3A">rota de API, método GET</text>
+<rect x="840" y="796" width="230" height="56" rx="6" fill="#FFFFFF" stroke="#D3D8CC" stroke-width="1.5"/>
+<text x="955.0" y="819.0" text-anchor="middle" font-family="'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="14.5" font-weight="600" fill="#1B2318">receitas.json</text>
+<text x="955.0" y="838.0" text-anchor="middle" font-family="'Segoe UI', 'DejaVu Sans', Arial, sans-serif" font-size="12.5" fill="#6E766A">arquivo fixo</text>
+<line x1="372" y1="824.0" x2="459" y2="824.0" stroke="#2F5D3A" stroke-width="2"/>
+<polygon points="468,824.0 458,819.0 458,829.0" fill="#2F5D3A"/>
+<text x="420.0" y="814.0" text-anchor="middle" font-family="'DejaVu Sans Mono', 'Courier New', monospace" font-size="12.5" font-weight="700" fill="#2F5D3A">fetch</text>
+<line x1="742" y1="824.0" x2="829" y2="824.0" stroke="#2F5D3A" stroke-width="2"/>
+<polygon points="838,824.0 828,819.0 828,829.0" fill="#2F5D3A"/>
+<text x="790.0" y="814.0" text-anchor="middle" font-family="'DejaVu Sans Mono', 'Courier New', monospace" font-size="12.5" font-weight="700" fill="#2F5D3A">import</text>
 </svg>

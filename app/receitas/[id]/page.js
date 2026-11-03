@@ -1,11 +1,26 @@
 /* Otto Martins Mota - RA 10418170 | Renan Garrido - RA 10417093 | Yuri Milliet da Silva - RA 10417884 */
 
+'use client';
+
+import { useEffect, useState } from 'react';
+import { useParams } from 'next/navigation';
 import Link from 'next/link';
-import receitas from '../../dados/receitas.json';
 import styles from './receita.module.css';
 
-export default async function Receita({ params }) {
-  const { id } = await params;
+export default function Receita() {
+  const { id } = useParams();
+  const [receitas, setReceitas] = useState([]);
+
+  useEffect(() => {
+    fetch('/api/receitas')
+      .then((resposta) => resposta.json())
+      .then((dados) => setReceitas(dados));
+  }, []);
+
+  if (receitas.length === 0) {
+    return <p className={styles.aviso}>Carregando receita...</p>;
+  }
+
   const receita = receitas.find((item) => String(item.id) === id);
 
   if (!receita) {
