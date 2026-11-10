@@ -8,4 +8,4 @@
 @media (max-width: 900px) { .areaReceitas { grid-template-columns: 1fr; gap: 1.8rem; } }
 @media (max-width: 600px) { .areaReceitas { width: 100%; min-width: 0; } }
 
-.carregando { margin-top: 3rem; font-size: 1.1rem; color: var(--pedra); }
+.aviso { margin-top: 3rem; font-size: 1.1rem; color: var(--pedra); }

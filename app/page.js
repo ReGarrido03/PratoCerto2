@@ -10,15 +10,32 @@ import styles from './page.module.css';
 
 export default function Home() {
   const [receitas, setReceitas] = useState([]);
+  const [carregando, setCarregando] = useState(true);
+  const [erro, setErro] = useState(false);
 
   useEffect(() => {
     fetch('/api/receitas')
-      .then((resposta) => resposta.json())
-      .then((dados) => setReceitas(dados));
+      .then((resposta) => {
+        if (!resposta.ok) {
+          throw new Error('A API respondeu com erro.');
+        }
+        return resposta.json();
+      })
+      .then((dados) => setReceitas(dados))
+      .catch(() => setErro(true))
+      .finally(() => setCarregando(false));
   }, []);
 
+  if (carregando) {
+    return <p className={styles.aviso}>Carregando receitas...</p>;
+  }
+
+  if (erro) {
+    return <p className={styles.aviso}>Não foi possível carregar as receitas. Tente novamente mais tarde.</p>;
+  }
+
   if (receitas.length === 0) {
-    return <p className={styles.carregando}>Carregando receitas...</p>;
+    return <p className={styles.aviso}>Nenhuma receita no acervo por enquanto.</p>;
   }
 
   return (
